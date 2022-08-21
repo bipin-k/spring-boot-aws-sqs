@@ -1,7 +1,7 @@
 cloud:
   aws:
     region:
-      static: ap-south-1
+      static: ${AWS_REGION}
       auto: false
     credentials:
       access-key: ${AWS_ACCESS_KEY}

@@ -29,7 +29,7 @@ public class AwsSQSConfig {
     AWSStaticCredentialsProvider awsStaticCredentialsProvider =
         new AWSStaticCredentialsProvider(new BasicAWSCredentials(awsAccessKey, awsSecretKey));
     return AmazonSQSAsyncClientBuilder.standard()
-        .withRegion(Regions.AP_SOUTH_1)
+        .withRegion(region)
         .withCredentials(awsStaticCredentialsProvider)
         .build();
   }
